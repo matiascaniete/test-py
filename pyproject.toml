@@ -18,6 +18,9 @@ pydantic = "^2.9.2"
 fastapi = "^0.115.4"
 httpx = "^0.27.2"
 
+[tool.poetry.scripts]
+test-python = "test_python.main:main"
+
 
 [build-system]
 requires = ["poetry-core"]
