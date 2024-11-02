@@ -36,6 +36,8 @@ def main():
     markdown = """
 # this is header
 
+## this is subheader
+
     Rich is great
 
     1. item
@@ -57,10 +59,10 @@ def main():
     console.print("Printing with rich")
     console.print(Markdown(markdown))
 
-    response = httpx.get(
-        "https://erp.ndorma.com",
-        headers={"User-Agent": "Mozilla/5.0"},
-        follow_redirects=True,
-    )
+    # response = httpx.get(
+    #     "https://erp.ndorma.com",
+    #     headers={"User-Agent": "Mozilla/5.0"},
+    #     follow_redirects=True,
+    # )
 
     # print(response.text)
